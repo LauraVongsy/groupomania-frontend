@@ -1,0 +1,44 @@
+@import "./colors";
+@import "./settings";
+
+.header-container {
+  display: flex;
+  height: 130px;
+  background: linear-gradient(to left, $rose, white);
+  margin-top:0px;
+ align-items: center;
+  margin-bottom: 30px;
+}
+
+
+.header-logo {
+  display: flex;
+  height: 100px;
+  width: 30%;
+
+}
+
+#logo {
+  display: flex;
+  object-fit: cover;
+  height: 100px;
+  width: 100%;
+  }
+#logout-btn{
+  background: none;
+  border:none;
+  cursor: pointer;
+}
+#logout-btn-icon{
+  color: $rouge;
+  display: flex;
+  height: 30px;
+  width: 30px;
+  margin:35px;
+}
+
+p {
+  color: $rouge;
+}
+
+

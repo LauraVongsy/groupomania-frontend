@@ -1,0 +1,60 @@
+@import "./colors";
+
+.login {
+  display: flex;
+  flex-direction: column;
+ width:400px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border:1px solid lightgrey;
+  margin: auto;
+  box-shadow: 2px 2px 2px lightgrey;
+}
+
+
+
+.tab-cells{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+cursor: pointer;
+  background-color: #ffebeb;
+  width: 100%;
+  color:$gris;
+  font-weight: bolder;
+
+}
+
+#register-tab,#signIn-tab{
+  display: flex;
+
+  width:50%;
+  border:1px solid lightgrey;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+#sign-in-form, #sign-up-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 10px;
+}
+
+input {
+  color:$gris;
+  font-weight: bold;
+  background-color: #ffebeb;
+  border:none;
+  height: 25px;
+  box-shadow: 2px 2px 2px lightgrey;
+  outline: none;
+  cursor: pointer;
+}
+
+
+#email-error, #password-error {
+  height: 10px;
+  width: auto;
+}

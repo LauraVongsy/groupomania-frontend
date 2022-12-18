@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@300&display=swap');
+
+$font :'Lato', 'sans-serif';
+
+*{
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: $font;
+  font-weight: 500;
+}
+
