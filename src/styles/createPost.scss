@@ -53,12 +53,6 @@
     background-color: white;
 }
 
-// .divPicture {
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: center;
-// }
-
 .picture {
     display: flex;
     justify-content: center;
@@ -99,8 +93,8 @@ h3 {
 }
 
 .profilPicture {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     margin: 10px;
     clip-path: ellipse(50% 50%);
 }
