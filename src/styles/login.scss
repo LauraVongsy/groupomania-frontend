@@ -1,60 +1,78 @@
 @import "./colors";
 
 .login {
-  display: flex;
-  flex-direction: column;
- width:400px;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  border:1px solid lightgrey;
-  margin: auto;
-  box-shadow: 2px 2px 2px lightgrey;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    border-radius: 25px;
+    margin: auto;
+    box-shadow: 2px 2px 2px grey;
 }
 
+.tab-cells {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    width: 100%;
+    color: $gris;
+    font-weight: bolder;
+    border-radius: 25px;
+}
+.selected {
+    background: #75e9e5;
+}
+#register-tab,
+#signIn-tab {
+    display: flex;
+    border-radius: 25px;
+    width: 50%;
 
-
-.tab-cells{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-cursor: pointer;
-  background-color: #ffebeb;
-  width: 100%;
-  color:$gris;
-  font-weight: bolder;
-
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.sign-in-form,
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 50px;
+    input {
+        color: $gris;
+        font-weight: bold;
+        border-radius: 25px;
+        border: none;
+        height: 30px;
+        box-shadow: 2px 2px 2px grey;
+        outline: none;
+        cursor: pointer;
+        margin: 20px;
+        padding: 5px;
+    }
 }
 
-#register-tab,#signIn-tab{
-  display: flex;
+.button {
+    color: white;
+    border-radius: 25px;
+    border: none;
 
-  width:50%;
-  border:1px solid lightgrey;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-#sign-in-form, #sign-up-form {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding-top: 10px;
-}
-
-input {
-  color:$gris;
-  font-weight: bold;
-  background-color: #ffebeb;
-  border:none;
-  height: 25px;
-  box-shadow: 2px 2px 2px lightgrey;
-  outline: none;
-  cursor: pointer;
+    box-shadow: 2px 2px 2px grey;
+    cursor: pointer;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    font-weight: bold;
+    font-size: medium;
+    margin: 30px 0;
+    width: 100%;
+    padding: 10px;
 }
 
-
-#email-error, #password-error {
-  height: 10px;
-  width: auto;
+#email-error,
+#password-error {
+    height: 10px;
+    width: auto;
 }

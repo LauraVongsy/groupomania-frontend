@@ -1,48 +1,47 @@
-@import './colors';
+@import "./colors";
 
-
-.navbar{
- position: fixed;
-  width:80px;
-  padding:20px;
-  button{
-    height:50px;
-    width:50px;
-    background-color: transparent;
-    border:none;
-  }
-
-}
-
-#home-btn,#profile-btn, #logout-btn{
-  height:50px;
-  width:50px;
-  cursor: pointer;
-color:$gris;
-
-}
-
-@media only screen and (min-width:300px) and (max-width:768px ){
-  .navbar {
-    width: 30%;
-    padding: 10px;
-    text-align: right;
-    top: 10px;
-    right: 10px;
-  }
-   .nav-btn{
-      display: inline-block;
-     height:50px;
-      width:50px;
-      background-color: transparent;
-      border:none;
+.navbar {
+    position: fixed;
+    width: 80px;
+    padding: 20px;
+    button {
+        height: 50px;
+        width: 50px;
+        background-color: transparent;
+        border: none;
     }
-    #home-btn,#profile-btn, #logout-btn{
-      height:40px;
-      width:40px;
-      cursor: pointer;
-      color:$gris;
+}
 
+#home-btn,
+#profile-btn,
+#logout-btn {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    color: #75e9e5;
+}
 
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    .navbar {
+        width: 30%;
+        padding: 10px;
+        text-align: right;
+        top: 10px;
+        right: 10px;
+    }
+    .nav-btn {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        background-color: transparent;
+        border: none;
+    }
+    #home-btn,
+    #profile-btn,
+    #logout-btn {
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        color: $gris;
     }
 }

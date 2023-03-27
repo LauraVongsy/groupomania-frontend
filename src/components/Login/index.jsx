@@ -1,8 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import SignUpForm from "./SignUpForm";
 import SignInForm from "./SignInForm";
-import '../../styles/login.scss';
-
+import "../../styles/login.scss";
 
 const Log = () => {
     const [signUpModal, setSignUpModal] = useState(false);
@@ -16,23 +15,29 @@ const Log = () => {
             setSignInModal(true);
             setSignUpModal(false);
         }
-    }
+    };
 
     return (
         <div className="login">
             <div className="tab-cells">
-                <div onClick={handleModals} id="signIn-tab">
+                <div
+                    className={signInModal ? "selected" : ""}
+                    onClick={handleModals}
+                    id="signIn-tab"
+                >
                     Se connecter
                 </div>
-                <div onClick={handleModals} id="register-tab">
+                <div
+                    className={signUpModal ? "selected" : ""}
+                    onClick={handleModals}
+                    id="register-tab"
+                >
                     S'inscrire
                 </div>
-
-
             </div>
             <div className="form-container">
-                {signUpModal && <SignUpForm/>}
-                {signInModal && <SignInForm/>}
+                {signUpModal && <SignUpForm />}
+                {signInModal && <SignInForm />}
             </div>
         </div>
     );

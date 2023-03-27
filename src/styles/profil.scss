@@ -1,206 +1,221 @@
 @import "./colors";
 
 .profil-container {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  width: 600px;
-  background-color: #ffebeb;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
-
-h1 {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin: 20px;
-  color: $gris;
-}
-
-.profil-form-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-#prenom, #nom, {
-  width: 250px;
-  height: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: white;
-  outline: none;
-
-}
-
-#bio {
-  height: 200px;
-  width: 250px;
-  margin: 20px 0 20px 20px;
-  box-shadow: 2px 2px 2px lightgrey;
-  //border-radius: 20px;
-  border: white;
-}
-
-label {
-  font-weight: bold;
-  color: $gris;
-}
-
-.photo-profil {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  color: $gris;
-  height: 400px;
-  width: 40%;
-  margin-right: 15px;
-  h3{
-    color:$gris;
-  }
-  input{
-    display: none;
-  }
-
-}
-.image-btn{
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  height: 30px;
-  background-color: white;
-  padding: 5px;
-  border:1px solid lightgrey;
-  border-radius: 4px;
-}
-
-.form-column {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  margin-left: 15px;
-
-}
-
-.profil-pic {
-  width: 200px;
-  clip-path: circle(50%);
-  object-fit: cover;
-  height: 200px;
-  background-color: white;
-
-}
-
-#sendBtn {
-  display: flex;
-  cursor:pointer;
-  height: 40px;
-  background-color: white;
-  padding:5px;
-  border: 3px solid $gris;
-  border-radius: 4px;
-  font-weight: bold;
-  color:#4E5166;
-}
-
-.textAreaBio {
-  padding: 5px;
-  outline: none;
-  overflow-y:scroll;
-}
-
-.delete-btn{
-  display: flex;
-  height: 40px;
-  background-color: white;
-  padding:5px;
-  border: 3px solid darkred;
-  border-radius: 4px;
-  font-weight: bold;
-  color:#4E5166;
-}
-
-.profil-buttons{
-  width: 100%;
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media only screen and (min-width:300px) and (max-width:768px) {
-  .profil-container {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 80%;
-    background-color: #ffebeb;
+    width: 600px;
+    background-color: #f8f8f8;
     align-items: center;
     justify-content: center;
     margin: auto;
-  }
-  .profil-form-container {
+    border-radius: 25px;
+}
+
+h1 {
+    align-items: center;
+    justify-content: center;
     display: flex;
-    flex-direction: column;
+    margin: 20px;
+    color: $gris;
+}
+
+.profil-form-container {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-  }
-  .form-column {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 0px;
-  }
-  #prenom, #nom, {
-    width: 80%;
+}
+
+#prenom,
+#nom {
+    width: 250px;
     height: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: white;
     outline: none;
+    border-radius: 25px;
+    border: 1px solid grey;
+    padding: 5px;
+    color: grey;
+    font-weight: bold;
+}
 
-  }
-  #bio {
-    width: 80%;
-  }
-  .photo-profil {
+#bio {
+    height: 200px;
+    width: 250px;
+    margin: 20px 0 20px 0px;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 25px;
+    border: white;
+    padding: 15px;
+    color: grey;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    color: $gris;
+}
+
+.photo-profil {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     color: $gris;
-
-    width: 60%;
+    height: 400px;
+    width: 40%;
     margin-right: 15px;
-
     h3 {
-      color: $gris;
+        color: $gris;
     }
-
     input {
-      display: none;
+        display: none;
     }
+}
+.image-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    color: grey;
+}
 
-  }
-  .profil-buttons {
-    width: 100%;
+.form-column {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 15px;
+}
+
+.profil-pic {
+    width: 200px;
+    clip-path: circle(50%);
+    object-fit: cover;
+    height: 200px;
+    background-color: white;
+}
+
+#sendBtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    padding: 8px;
+    box-shadow: 2px 2px 2px grey;
+    border: none;
+
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.textAreaBio {
     padding: 5px;
+    outline: none;
+    overflow-y: scroll;
+}
+
+.delete-span {
+    display: flex;
+    cursor: pointer;
+    font-weight: bold;
+    color: #4e5166;
+    &:hover {
+        font-size: 1.1em;
+        text-decoration: underline;
+    }
+}
+
+.profil-buttons {
+    width: 100%;
+    padding: 30px;
     display: flex;
     flex-direction: row;
     margin: auto;
     align-items: center;
-    justify-content: space-around;
-  }
-  .delete-btn , #sendBtn{
-    height: auto;
-  }
+    justify-content: space-between;
+}
 
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    .profil-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+        background-color: #f8f8f8;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        border-radius: 25px;
+    }
+    .profil-form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .form-column {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0px;
+    }
+    #prenom,
+    #nom {
+        width: 80%;
+        height: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: white;
+        outline: none;
+        border-radius: 25px;
+        border: 1px solid grey;
+        padding: 5px;
+        color: grey;
+        font-weight: bold;
+    }
+    #bio {
+        width: 80%;
+    }
+    .photo-profil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: grey;
+
+        width: 60%;
+        margin-right: 15px;
+
+        h3 {
+            color: grey;
+        }
+
+        input {
+            display: none;
+        }
+    }
+    .profil-buttons {
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .delete-btn,
+    #sendBtn {
+        height: auto;
+    }
 }

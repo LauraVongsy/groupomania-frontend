@@ -2,43 +2,36 @@
 @import "./settings";
 
 .header-container {
-  display: flex;
-  height: 130px;
-  background: linear-gradient(to left, $rose, white);
-  margin-top:0px;
- align-items: center;
-  margin-bottom: 30px;
-}
+    display: flex;
 
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    margin-top: 0px;
+    align-items: center;
+    margin-bottom: 50px;
+}
 
 .header-logo {
-  display: flex;
-  height: 100px;
-  width: 30%;
-
+    display: flex;
 }
 
-#logo {
-  display: flex;
-  object-fit: cover;
-  height: 100px;
-  width: 100%;
-  }
-#logout-btn{
-  background: none;
-  border:none;
-  cursor: pointer;
+.logo {
+    display: flex;
+    color: #75e9e5;
+    font-weight: bolder;
 }
-#logout-btn-icon{
-  color: $rouge;
-  display: flex;
-  height: 30px;
-  width: 30px;
-  margin:35px;
+#logout-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#logout-btn-icon {
+    color: $rouge;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    margin: 35px;
 }
 
 p {
-  color: $rouge;
+    color: $rouge;
 }
-
-
