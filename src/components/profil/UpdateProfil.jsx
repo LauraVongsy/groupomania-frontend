@@ -145,12 +145,19 @@ const UpdateProfil = () => {
                 </div>
                 <div className="photo-profil">
                     <h3>Votre photo de profil</h3>
-                    <img
-                        src={state.profilPicture}
-                        alt="avatar"
-                        className="profil-pic"
-                    />
-                    {/*{show ? <img id="profil-pic" src={imageURL} alt="votre fichier"/> : null}*/}
+                    {state.profilPicture ? (
+                        <img
+                            src={state.profilPicture}
+                            alt="avatar"
+                            className="profil-pic"
+                        />
+                    ) : (
+                        <img
+                            src="/assets/defaultPicture.jpg"
+                            alt="defaultPicture"
+                        />
+                    )}
+
                     <br />
                     <label htmlFor="file" className="image-btn">
                         Choisir une image
